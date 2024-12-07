@@ -1,0 +1,355 @@
+/* Kontak & Footer Section */
+.contact-footer {
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  border-top: 2px solid #ddd;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.contact-footer h2, .contact-footer h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0B63DC;
+  animation: slideInLeft 1s ease-out;
+}
+
+.contact-footer p {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-footer .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contact-footer .row .col-12 {
+  margin-bottom: 15px;
+}
+
+.contact-footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contact-footer ul li {
+  margin: 10px 0;
+}
+
+.contact-footer ul li a {
+  color: #0B63DC;
+  text-decoration: none;
+}
+
+.contact-footer ul li a:hover {
+  text-decoration: underline;
+}
+
+.contact-footer address {
+  font-style: normal;
+  color: #333;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icon {
+  font-size: 30px;
+  color: #333;
+  margin-right: 15px;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #0B63DC;
+}
+
+.footer-text {
+  font-size: 14px;
+  color: #777;
+  margin-top: 30px;
+  text-align: center;
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .contact-footer h2 {
+    font-size: 28px;
+  }
+
+  .contact-footer h4 {
+    font-size: 18px;
+  }
+
+  .contact-footer p {
+    font-size: 14px;
+  }
+
+  .social-icons {
+    text-align: center;
+  }
+
+  .social-icon {
+    font-size: 25px;
+    margin-right: 10px;
+  }
+
+  .footer-text {
+    font-size: 12px;
+  }
+
+  .col-md-6 {
+    margin-bottom: 20px;
+  }
+}
+
+/* Peta */
+.map-container iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #343a40;
+  padding: 10px 0;
+}
+
+.navbar-brand {
+  font: 32px Viga;
+  color: white !important;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+  text-transform: uppercase;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+  color: #0B63DC !important;
+  transform: scale(1.1);
+}
+
+/* Jumbotron */
+.jumbotron {
+  background: url(../img/jumbotron-bg.jpeg) no-repeat center center;
+  background-size: cover;
+  height: 540px;
+  position: relative;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.jumbotron::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  bottom: 0;
+}
+
+.jumbotron .container {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.jumbotron .display-4 {
+  font-weight: 200;
+  font-size: 3em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.jumbotron .display-4 span {
+  font-weight: 500;
+}
+
+/* Info Panel */
+.info-panel {
+  background-color: white;
+  padding: 30px;
+  margin-top: -120px;
+  border-radius: 12px;
+  box-shadow: 0 3px 20px rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  animation: slideInUp 1s ease-out forwards;
+}
+
+.info-panel h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.info-panel p {
+  font-size: 14px;
+  color: #acacac;
+}
+
+/* Workingspace */
+.workingspace {
+  margin-top: 120px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.workingspace h2 {
+  font-size: 52px;
+  text-transform: uppercase;
+  font-weight: 200;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.workingspace h2 span {
+  font-weight: 500;
+}
+
+.workingspace p {
+  font-size: 18px;
+  color: #ACACAC;
+}
+
+.testimonial {
+  padding: 60px 0;
+  background-color: #f8f9fa; /* Latar belakang abu-abu terang */
+}
+
+.testimonial .testimonial-item {
+  background-color: white; /* Latar belakang item putih */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+  margin-bottom: 30px; /* Jarak antar testimonial */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek animasi */
+}
+
+.testimonial .testimonial-item:hover {
+  transform: translateY(-10px); /* Efek angkat */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Bayangan lebih besar saat hover */
+}
+
+.testimonial p {
+  font-size: 1.2em;
+  font-style: italic;
+  color: #555; /* Warna teks lebih lembut */
+  line-height: 1.6;
+}
+
+.testimonial h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #333;
+}
+
+.testimonial .testimonial-position {
+  font-size: 14px;
+  color: #777;
+  margin-top: 5px;
+}
+
+.testimonial .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.testimonial .col-md-4 {
+  margin-bottom: 30px; /* Jarak bawah antar kolom */
+}
+
+/* Responsiveness */
+@media (max-width: 767px) {
+  .testimonial p {
+    font-size: 1em; /* Ukuran font lebih kecil di layar kecil */
+  }
+
+  .testimonial h5 {
+    font-size: 16px; /* Ukuran nama lebih kecil */
+  }
+
+  .testimonial .testimonial-position {
+    font-size: 12px; /* Ukuran jabatan lebih kecil */
+  }
+
+  .testimonial .col-md-4 {
+    flex: 0 0 100%; /* Menampilkan testimonial dalam satu kolom di perangkat kecil */
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Styling untuk Halaman */
+html {
+  scroll-behavior: smooth;
+}
+
+#home, #info, #contact {
+  padding-top: 70px;
+  margin-top: -70px;
+}
+
+.workingspace .col-lg-6 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Menjaga proporsi gambar tanpa terdistorsi */
+  border-radius: 10px; /* Memberikan sudut melengkung pada gambar */
+}
+
+/* Jika ingin gambar berbentuk lingkaran */
+.workingspace .col-lg-6 img.rounded {
+  border-radius: 50%; /* Gambar menjadi bulat */
+  object-fit: cover;
+}
